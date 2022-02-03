@@ -1,0 +1,13 @@
+/mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/imgtool/target/debug/deps/gif-78dbd2e8a5093889.rmeta: /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/lib.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/traits.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/common.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/mod.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/decoder.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/encoder.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/../README.md
+
+/mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/imgtool/target/debug/deps/libgif-78dbd2e8a5093889.rlib: /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/lib.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/traits.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/common.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/mod.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/decoder.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/encoder.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/../README.md
+
+/mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/imgtool/target/debug/deps/gif-78dbd2e8a5093889.d: /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/lib.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/traits.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/common.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/mod.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/decoder.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/encoder.rs /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/../README.md
+
+/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/lib.rs:
+/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/traits.rs:
+/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/common.rs:
+/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/mod.rs:
+/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/reader/decoder.rs:
+/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/encoder.rs:
+/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/gif-0.11.3/src/../README.md:

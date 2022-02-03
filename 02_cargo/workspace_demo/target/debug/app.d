@@ -1,0 +1,1 @@
+/mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/workspace_demo/target/debug/app: /mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/workspace_demo/app/src/main.rs /mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/workspace_demo/my_crate/src/lib.rs
