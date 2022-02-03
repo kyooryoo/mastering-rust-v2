@@ -35,8 +35,8 @@ Get general help: cargo
 Get help of a specific command:cargo help new  
 Create new project: cargo new <pj_name>  
 
-Update all dependencies: cargo update
-Update specified package: cargo update -p <crate_name>  
+Update all dependencies: `cargo update`  
+Update specified package: `cargo update -p <crate_name>`  
 
 Version number format: major.minor.patch  
 * major: big change or critical bug fixation
@@ -70,14 +70,14 @@ Check out the demo project *workspace_demo*
 
 ### Other Tools
 Run `cargo install <tool_name>` to install them:  
-* cargo-watch: auto check code when update happens
+* cargo-watch: auto check code when update happens  
 Run `cargo watch` once to start monitoring  
-* cargo-edit: auto add dependencies into *Cargo.toml*
+* cargo-edit: auto add dependencies into *Cargo.toml*  
 Run `cargo add` `cargo rm` `cargo edit` `cargo upgrade`  
-* cargo-deb: generate Debian Linux executable
-* cargo-outdated: check outdated libraries
+* cargo-deb: generate Debian Linux executable  
+* cargo-outdated: check outdated libraries  
 
-* clippy: check and fix code syntax errors
+* clippy: check and fix code syntax errors  
 Install with `rustup component add clippy`  
 Run with `cargo clippy`  
 
@@ -108,15 +108,57 @@ Run with `cargo clippy`
 
 ### Dev Environment
 IntelliJ IDEA or Visual Studio Code are preferred options.  
-Recommended plugin is *rls-vscode* search *rls* can find it.
+Recommended plugin is *rls-vscode* search *rls* can find it.  
 Check other IDEs for RUST at [Are we (I)DE yet?](https://areweideyet.com/)  
 
 ### Demo Project
 Create a program with a 3rd party library *image*  
-1. Add *image* library to *Cargo.toml* dependency
+1. Add *image* library to *Cargo.toml* dependency  
 ```
 [dependencies]
 image = "0.19.0"
 ```
 Then run `cargo build` to get it ready  
-2. Modify *main.rs* to read command param as image path
+2. Modify *main.rs* to read command param as image path  
+Two other optional args for retation method and inplace  
+```
+let image_path = env::args().skip(1).next().unwrap();
+let rotate_method = env::args().skip(2).next().unwrap_or("90".to_string());
+let inplace = env::args().skip(3).next().unwrap_or("false".to_string());
+```
+Optional args have default value defined by *unwrap_or()*  
+3. Create path and prepare new path for saving the result:  
+Notice, how Path and image crates are implemented.  
+```
+    let new_image_path = &image_path.replace(".", "_rotated.");
+    let new_path = Path::new(&new_image_path);
+
+    let path = Path::new(&image_path);
+    let img = image::open(path).unwrap();
+```
+4. Match input optional args to different impls respectively.  
+Function is depending on rotation method and inplace indicator:  
+```
+    let rotated = match &rotate_method as &str {
+        "90" => img.rotate90(),
+        "180" => img.rotate180(),
+        "270" => img.rotate270(),
+        _ => {
+            println!("please provide rotate method: 90 180 270");
+            img
+        }
+    };
+    match &inplace as &str {
+        "true" => rotated.save(path).unwrap(),
+        _ => rotated.save(new_path).unwrap()
+    }
+```
+5. Execute following command to test program functions:  
+* use default rotation method *90* and inplace of *false*  
+`$ cargo run -- assets/rust_logo.jpg`
+* use rotation method of *270* and default inplace of *false*  
+`$ cargo run -- assets/rust_logo.jpg 270`
+* use ratation method of *180* and inplace of *true*
+`$ cargo run -- assets/rust_logo.jpg 180 true`
+
+End of Chapter 2
