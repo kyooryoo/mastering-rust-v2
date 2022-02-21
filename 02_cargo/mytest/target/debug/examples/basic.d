@@ -1,1 +1,0 @@
-/mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/mytest/target/debug/examples/basic: /mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/mytest/examples/basic.rs /mnt/c/Users/user/Workspace/rust/mastering-rust-v2/02_cargo/mytest/src/lib.rs

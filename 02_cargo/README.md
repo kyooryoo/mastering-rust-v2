@@ -7,9 +7,9 @@ Use keyword *mod* to import an external module.
 (Internal module has *mod* in its declaration) 
 
 Use keyword *use* to import elements in module.  
-* use crate::foo::Bar;
-* use self::foo::Bar;
-* use super::foo::Bar;
+* use crate::foo::Bar;  
+* use self::foo::Bar;  
+* use super::foo::Bar;  
 Keyword *crate* imports from the root module.  
 KW *self* imports from current module itslef.  
 KW *super* to import item from parent module.  
@@ -158,7 +158,7 @@ Function is depending on rotation method and inplace indicator:
 `$ cargo run -- assets/rust_logo.jpg`
 * use rotation method of *270* and default inplace of *false*  
 `$ cargo run -- assets/rust_logo.jpg 270`
-* use ratation method of *180* and inplace of *true*
+* use ratation method of *180* and inplace of *true*  
 `$ cargo run -- assets/rust_logo.jpg 180 true`
 
 End of Chapter 2
