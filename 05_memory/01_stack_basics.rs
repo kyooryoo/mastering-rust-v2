@@ -13,7 +13,7 @@ fn main() {
     let a = 12;
     // step 3: double_of returns and stack updated
     // [[a=12, result=24]]
-    let result = double_of(a);
+    let _result = double_of(a);
 }
 
 // step 4: main executed, stack clears: [] 
